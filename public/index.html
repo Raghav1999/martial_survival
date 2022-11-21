@@ -11,41 +11,11 @@
 <body>
     <div id="container-lg">
         <div class="h1 text-center">Martian Survival</div>
-        <div class="row">
+        <div class="row text-center mt-5">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-                <form action="/inventory" method="POST">
-                    <div class="mb-3">
-                        <label for="exampleInput1" class="form-label">Packet ID</label>
-                        <input type="text" class="form-control" id="exampleInput1" required>
-                    </div>
-                    <select class="form-select" aria-label="Default select example" required>
-                        <option selected>Select Packet Type</option>
-                        <option value="water">Water</option>
-                        <option value="food">Food</option>
-                      </select>
-                    <div class="mb-3">
-                        <label for="exampleInput2" class="form-label">Packet Content</label>
-                        <input type="text" class="form-control" id="exampleInput2">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInput3" class="form-label">Calories</label>
-                        <input type="number" min="0" class="form-control" id="exampleInput3">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInput4" class="form-label">Packet Expiry Date</label>
-                        <input type="date" class="form-control" id="exampleInput4">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleInput5" class="form-label">Quantity (in Litres)</label>
-                        <input type="text" class="form-control" id="exampleInput5">
-                    </div>
-                    <!-- <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div> -->
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+                <a class="btn btn-primary" href="/inventory/add">add Ration</a>
+                <a class="btn btn-primary" href="/inventory">View all Inventory</a>
             </div>
             <div class="col-md-2"></div>
         </div>
